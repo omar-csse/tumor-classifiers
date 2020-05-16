@@ -93,7 +93,7 @@ def build_DecisionTree_classifier(X_training, y_training):
     '''
     ##         "INSERT YOUR CODE HERE"    
     dt = DecisionTreeClassifier()
-    param_grid = [{ 'max_depth': range(1, 1000, 1) }]
+    param_grid = [{ 'max_depth': range(1, 32, 1) }]
     clf = GridSearchCV(dt, param_grid)
     clf.fit(X_training, y_training)
 
@@ -214,7 +214,7 @@ if __name__ == "__main__":
     data_path = os.path.dirname(os.path.realpath(__file__)) + '/medical_records.data'
     x, y = prepare_dataset(data_path)
     #split the data randomly to 80% training set and 20% testting sets 
-    X_train, X_test, Y_train, Y_test = train_test_split(x,y,test_size=0.20)
+    X_train, X_test, Y_train, Y_test = train_test_split(x, y, random_state=42, test_size=0.20)
 
     # call classifiers
     knn_c = build_NearrestNeighbours_classifier(X_train, Y_train)

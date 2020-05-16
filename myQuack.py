@@ -61,7 +61,7 @@ def prepare_dataset(dataset_path):
     data = np.genfromtxt(dataset_path, delimiter=",", dtype=str)
 
     y = [data[:,1]]
-    Y_list=[None]*len(y[0])   
+    Y_list = [None] * len(y[0])   
     
     i = 0
     for Toumer in (y[0]):
@@ -70,10 +70,10 @@ def prepare_dataset(dataset_path):
             Y_list[i-1]=1
         else:
             Y_list[i-1]=0
-        y=np.array(Y_list)
+        y = np.array(Y_list)
 
-    x_list=data[:,2:]
-    x=np.array(x_list,dtype=np.float64)
+    x_list = data[:,2:]
+    x = np.array(x_list,dtype=np.float64)
 
     return x, y
 

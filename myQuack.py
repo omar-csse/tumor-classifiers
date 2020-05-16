@@ -73,7 +73,7 @@ def prepare_dataset(dataset_path):
         y = np.array(Y_list)
 
     x_list = data[:,2:]
-    x = np.array(x_list,dtype=np.float64)
+    x = np.array(x_list, dtype=np.float64)
 
     return x, y
 

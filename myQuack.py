@@ -23,6 +23,7 @@ from sklearn.metrics import plot_confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -91,7 +92,16 @@ def build_DecisionTree_classifier(X_training, y_training):
 	clf : the classifier built in this function
     '''
     ##         "INSERT YOUR CODE HERE"    
-    raise NotImplementedError()
+    dt = DecisionTreeClassifier()
+    param_grid = [{ 'max_depth': range(1, 1000, 1) }]
+    clf = GridSearchCV(dt, param_grid)
+    clf.fit(X_training, y_training)
+
+    print("\n\nbuild_DecisionTree_classifier model: ")
+    print ("Model best score: ",clf.best_score_)
+    print ("Model best params: ", clf.best_params_)
+
+    return clf
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -115,7 +125,8 @@ def build_NearrestNeighbours_classifier(X_training, y_training):
     knn = KNeighborsClassifier()
     clf = GridSearchCV(knn, param_grid)
     clf.fit(X_train,Y_train)
-    #Show the best neighbours value
+
+    # Show the best neighbours value
     print("\n\nbuild_NearrestNeighbours_classifier model: ")
     print ("Model best score: ",clf.best_score_)
     print ("Model best params: ", clf.best_params_)
@@ -206,7 +217,10 @@ if __name__ == "__main__":
     X_train, X_test, Y_train, Y_test = train_test_split(x,y,test_size=0.20)
 
     # call classifiers
-    cknn = build_NearrestNeighbours_classifier(X_train, Y_train)
-    evaluate_model(cknn, X_train, Y_train, X_test, Y_test)
+    knn_c = build_NearrestNeighbours_classifier(X_train, Y_train)
+    evaluate_model(knn_c, X_train, Y_train, X_test, Y_test)
+
+    dt_c = build_DecisionTree_classifier(X_train, Y_train)
+    evaluate_model(dt_c, X_train, Y_train, X_test, Y_test)
     
 

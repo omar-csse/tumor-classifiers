@@ -24,6 +24,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -147,7 +148,18 @@ def build_SupportVectorMachine_classifier(X_training, y_training):
 	clf : the classifier built in this function
     '''
     ##         "INSERT YOUR CODE HERE"    
-    raise NotImplementedError()
+    svmc = SVC()
+
+    param_grid = [{ 'kernel': ['rbf'], 'C': range(1, 10, 1)}]
+    clf = GridSearchCV(svmc, param_grid)
+    clf.fit(X_training, y_training)
+
+    print("\n\nbuild_SupportVectorMachine_classifier model: ")
+    print ("Model best score: ",clf.best_score_)
+    print ("Model best params: ", clf.best_params_)
+
+    return clf
+
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -213,7 +225,7 @@ if __name__ == "__main__":
     ##         "INSERT YOUR CODE HERE"    
     data_path = os.path.dirname(os.path.realpath(__file__)) + '/medical_records.data'
     x, y = prepare_dataset(data_path)
-    #split the data randomly to 80% training set and 20% testting sets 
+    # split the data randomly to 80% training set and 20% testting sets 
     X_train, X_test, Y_train, Y_test = train_test_split(x, y, random_state=42, test_size=0.20)
 
     # call classifiers
@@ -222,5 +234,8 @@ if __name__ == "__main__":
 
     dt_c = build_DecisionTree_classifier(X_train, Y_train)
     evaluate_model(dt_c, X_train, Y_train, X_test, Y_test)
+
+    svm_c = build_SupportVectorMachine_classifier(X_train, Y_train)
+    evaluate_model(svm_c, X_train, Y_train, X_test, Y_test)
     
 

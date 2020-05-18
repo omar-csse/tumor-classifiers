@@ -181,6 +181,7 @@ def build_NeuralNetwork_classifier(X_training, y_training):
     '''
     ##         "INSERT YOUR CODE HERE"    
 
+    print("\n\n\n")
     # create model
     clf = tf.keras.Sequential()
     clf.add(tf.keras.layers.Flatten())

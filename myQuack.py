@@ -15,16 +15,19 @@ import os
 import itertools
 
 import numpy as np
-import pandas as pd
+import tensorflow as tf
 
 import matplotlib.pyplot as plt
-from sklearn.metrics import plot_confusion_matrix
 
+from sklearn.metrics import plot_confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
+
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' 
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -94,7 +97,7 @@ def build_DecisionTree_classifier(X_training, y_training):
     '''
     ##         "INSERT YOUR CODE HERE"    
     dt = DecisionTreeClassifier()
-    param_grid = [{ 'max_depth': range(1, 32, 1) }]
+    param_grid = dict(max_depth=range(1, 32, 1))
     clf = GridSearchCV(dt, param_grid)
     clf.fit(X_training, y_training)
 
@@ -121,7 +124,7 @@ def build_NearrestNeighbours_classifier(X_training, y_training):
     max_N_value = 350
     min_N_value = 1
     n_range = list(range(min_N_value,max_N_value))
-    param_grid = dict(n_neighbors = n_range)
+    param_grid = dict(n_neighbors=n_range)
     # Fit the model and build it
     knn = KNeighborsClassifier()
     clf = GridSearchCV(knn, param_grid)
@@ -150,7 +153,7 @@ def build_SupportVectorMachine_classifier(X_training, y_training):
     ##         "INSERT YOUR CODE HERE"    
     svmc = SVC()
 
-    param_grid = [{ 'kernel': ['rbf'], 'C': range(1, 10, 1)}]
+    param_grid = dict(kernel=['rbf'], C=range(1, 10, 1))
     clf = GridSearchCV(svmc, param_grid)
     clf.fit(X_training, y_training)
 
@@ -177,7 +180,20 @@ def build_NeuralNetwork_classifier(X_training, y_training):
 	clf : the classifier built in this function
     '''
     ##         "INSERT YOUR CODE HERE"    
-    raise NotImplementedError()
+
+    # create model
+    clf = tf.keras.Sequential()
+    clf.add(tf.keras.layers.Flatten())
+    clf.add(tf.keras.layers.Dense(64, activation=tf.nn.relu))
+    clf.add(tf.keras.layers.Dense(64, activation=tf.nn.relu))
+    clf.add(tf.keras.layers.Dense(1, activation=tf.nn.sigmoid))
+    # Compile model
+    optimizer = tf.keras.optimizers.Adam(lr=0.01)
+    clf.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
+
+    clf.fit(X_training, y_training, epochs=10, batch_size=128)
+
+    return clf
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -214,10 +230,17 @@ def evaluate_model(model, X_train, Y_train, X_test, Y_test):
     print('Train Accuracy: ' + str(sum(pred1 == Y_train)/len(Y_train)))
 
 
+def evaluate_nn_model(model, X_train, Y_train, X_test, Y_test):
+
+    val_loss, val_acc = model.evaluate(X_test, Y_test)
+    print('Testing Accuracy: ' + str(val_acc))
+    print('Testing loss: ' + str(val_loss))
+
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 if __name__ == "__main__":
-    pass
+
     # Write a main part that calls the different 
     # functions to perform the required tasks and repeat your experiments.
     # Call your functions here
@@ -237,5 +260,8 @@ if __name__ == "__main__":
 
     svm_c = build_SupportVectorMachine_classifier(X_train, Y_train)
     evaluate_model(svm_c, X_train, Y_train, X_test, Y_test)
+
+    nn_c = build_NeuralNetwork_classifier(X_train, Y_train)
+    evaluate_nn_model(nn_c, X_train, Y_train, X_test, Y_test)
     
 

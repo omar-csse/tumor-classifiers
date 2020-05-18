@@ -185,14 +185,14 @@ def build_NeuralNetwork_classifier(X_training, y_training):
     # create model
     clf = tf.keras.Sequential()
     clf.add(tf.keras.layers.Flatten())
-    clf.add(tf.keras.layers.Dense(64, activation=tf.nn.relu))
-    clf.add(tf.keras.layers.Dense(64, activation=tf.nn.relu))
+    clf.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))
+    clf.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))
     clf.add(tf.keras.layers.Dense(1, activation=tf.nn.sigmoid))
     # Compile model
-    optimizer = tf.keras.optimizers.Adam(lr=0.01)
+    optimizer = tf.keras.optimizers.Adam(lr=0.001)
     clf.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
 
-    clf.fit(X_training, y_training, epochs=10, batch_size=128)
+    clf.fit(X_training, y_training, epochs=50, batch_size=128)
 
     return clf
 
@@ -234,6 +234,7 @@ def evaluate_model(model, X_train, Y_train, X_test, Y_test):
 def evaluate_nn_model(model, X_train, Y_train, X_test, Y_test):
 
     val_loss, val_acc = model.evaluate(X_test, Y_test)
+    print("\n\nbuild_NeuralNetwork_classifier model: ")
     print('Testing Accuracy: ' + str(val_acc))
     print('Testing loss: ' + str(val_loss))
 

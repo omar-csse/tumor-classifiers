@@ -237,7 +237,7 @@ def evaluate_nn_model(model, X_train, Y_train, X_test, Y_test, data):
     print("\n\nbuild_NeuralNetwork_classifier model: ")
     print('Testing Accuracy: ' + str(val_acc))
     print('Testing loss: ' + str(val_loss))
-    print("\n\n")
+    print("\n")
 
     predictions = model.predict(X_test)
     classes = (model.predict(X_test) > 0.5).astype("int32")
@@ -248,7 +248,7 @@ def evaluate_nn_model(model, X_train, Y_train, X_test, Y_test, data):
             if (current_row==test_row).all():
                 if classes[j] == 1: Tumour = "M"
                 else: Tumour = "B"
-                print("id:{} - expeceted tumour:{} || predicted tumour:{}".format(row[0], row[1], Tumour))
+                print("id:{} - expeceted_tumour:{} || predicted_tumour:{}".format(row[0], row[1], Tumour))
     
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

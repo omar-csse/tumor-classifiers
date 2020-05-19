@@ -27,7 +27,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
 
 
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' 
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1' 
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

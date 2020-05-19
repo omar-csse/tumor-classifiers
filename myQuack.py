@@ -240,7 +240,7 @@ def evaluate_nn_model(model, X_train, Y_train, X_test, Y_test, data):
     print("\n")
 
     predictions = model.predict(X_test)
-    classes = (model.predict(X_test) > 0.5).astype("int32")
+    classes = (predictions > 0.5).astype("int32")
 
     for i, row in enumerate(data):
         for j, test_row in enumerate(X_test):

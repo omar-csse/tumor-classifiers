@@ -69,9 +69,9 @@ def prepare_dataset(dataset_path):
     Y_list = [None] * len(y[0])   
     
     i = 0
-    for Toumer in (y[0]):
+    for Tumour in (y[0]):
         i+=1 
-        if Toumer == "M":
+        if Tumour == "M":
             Y_list[i-1]=1
         else:
             Y_list[i-1]=0
@@ -80,7 +80,7 @@ def prepare_dataset(dataset_path):
     x_list = data[:,2:]
     x = np.array(x_list, dtype=np.float64)
 
-    return x, y
+    return x, y, data
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -231,13 +231,25 @@ def evaluate_model(model, X_train, Y_train, X_test, Y_test):
     print('Train Accuracy: ' + str(sum(pred1 == Y_train)/len(Y_train)))
 
 
-def evaluate_nn_model(model, X_train, Y_train, X_test, Y_test):
+def evaluate_nn_model(model, X_train, Y_train, X_test, Y_test, data):
 
     val_loss, val_acc = model.evaluate(X_test, Y_test)
     print("\n\nbuild_NeuralNetwork_classifier model: ")
     print('Testing Accuracy: ' + str(val_acc))
     print('Testing loss: ' + str(val_loss))
+    print("\n\n")
 
+    predictions = model.predict(X_test)
+    classes = (model.predict(X_test) > 0.5).astype("int32")
+
+    for i, row in enumerate(data):
+        for j, test_row in enumerate(X_test):
+            current_row = np.array(row[2:], dtype=np.float64)
+            if (current_row==test_row).all():
+                if classes[j] == 1: Tumour = "M"
+                else: Tumour = "B"
+                print("id:{} - expeceted tumour:{} || predicted tumour:{}".format(row[0], row[1], Tumour))
+    
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -249,7 +261,7 @@ if __name__ == "__main__":
 
     ##         "INSERT YOUR CODE HERE"    
     data_path = os.path.dirname(os.path.realpath(__file__)) + '/medical_records.data'
-    x, y = prepare_dataset(data_path)
+    x, y, data = prepare_dataset(data_path)
     # split the data randomly to 80% training set and 20% testting sets 
     X_train, X_test, Y_train, Y_test = train_test_split(x, y, random_state=42, test_size=0.20)
 
@@ -264,6 +276,6 @@ if __name__ == "__main__":
     evaluate_model(svm_c, X_train, Y_train, X_test, Y_test)
 
     nn_c = build_NeuralNetwork_classifier(X_train, Y_train)
-    evaluate_nn_model(nn_c, X_train, Y_train, X_test, Y_test)
+    evaluate_nn_model(nn_c, X_train, Y_train, X_test, Y_test, data)
     
 

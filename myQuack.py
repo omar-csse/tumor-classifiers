@@ -297,11 +297,11 @@ if __name__ == "__main__":
     X_train, X_test, Y_train, Y_test = train_test_split(x, y, random_state=42, test_size=0.20)
 
     # call classifiers
-    knn_c = build_NearrestNeighbours_classifier(X_train, Y_train)
-    evaluate_model(knn_c, X_train, Y_train, X_test, Y_test)
-
     dt_c = build_DecisionTree_classifier(X_train, Y_train)
     evaluate_model(dt_c, X_train, Y_train, X_test, Y_test)
+
+    knn_c = build_NearrestNeighbours_classifier(X_train, Y_train)
+    evaluate_model(knn_c, X_train, Y_train, X_test, Y_test)
 
     svm_c = build_SupportVectorMachine_classifier(X_train, Y_train)
     evaluate_model(svm_c, X_train, Y_train, X_test, Y_test)

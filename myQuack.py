@@ -225,10 +225,12 @@ def evaluate_model(model, X_train, Y_train, X_test, Y_test):
     ax = fig.add_subplot(1, 2, 2)
     conf = plot_confusion_matrix(model, X_test, Y_test, normalize='true', ax=ax)
     conf.ax_.set_title('Validation Set Performance')
-    pred = model.predict(X_test)
-    pred1 = model.predict(X_train)
-    print('Testing Accuracy: ' + str(sum(pred == Y_test)/len(Y_test)))
-    print('Train Accuracy: ' + str(sum(pred1 == Y_train)/len(Y_train)))
+    test_predictions = model.predict(X_test)
+    train_predictions = model.predict(X_train)
+    print('Testing Accuracy: ' + str(sum(test_predictions == Y_test)/len(Y_test)))
+    print('Train Accuracy: ' + str(sum(train_predictions == Y_train)/len(Y_train)))
+
+    show_prediction(model, data, X_test)
 
 
 def evaluate_nn_model(model, X_train, Y_train, X_test, Y_test, data):
@@ -237,10 +239,16 @@ def evaluate_nn_model(model, X_train, Y_train, X_test, Y_test, data):
     print("\n\nbuild_NeuralNetwork_classifier model: ")
     print('Testing Accuracy: ' + str(val_acc))
     print('Testing loss: ' + str(val_loss))
-    print("\n")
+
+    show_prediction(model, data, X_test)
+
+
+def show_prediction(model, data, X_test):
 
     predictions = model.predict(X_test)
     classes = (predictions > 0.5).astype("int32")
+
+    print("\n")
 
     for i, row in enumerate(data):
         for j, test_row in enumerate(X_test):
@@ -248,7 +256,10 @@ def evaluate_nn_model(model, X_train, Y_train, X_test, Y_test, data):
             if (current_row==test_row).all():
                 if classes[j] == 1: Tumour = "M"
                 else: Tumour = "B"
-                print("id:{} - expeceted_tumour:{} || predicted_tumour:{}".format(row[0], row[1], Tumour))
+
+                msg = "id:{} - expeceted_tumour:{} || predicted_tumour:{}".format(row[0], row[1], Tumour)
+                if Tumour != row[1]: msg = msg + " (**WRONG**)"
+                print(msg)
     
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

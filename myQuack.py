@@ -13,6 +13,7 @@ You are welcome to use the pandas library if you know it.
 
 import os 
 import itertools
+import csv
 
 import numpy as np
 import tensorflow as tf
@@ -97,13 +98,17 @@ def build_DecisionTree_classifier(X_training, y_training):
     '''
     ##         "INSERT YOUR CODE HERE"    
     dt = DecisionTreeClassifier()
-    param_grid = dict(max_depth=range(1, 32, 1))
+    tree_depth = list(range(1, 32+1))
+    param_grid = dict(max_depth=tree_depth)
     clf = GridSearchCV(dt, param_grid)
     clf.fit(X_training, y_training)
 
     print("\n\nbuild_DecisionTree_classifier model: ")
     print ("Model best score: ",clf.best_score_)
     print ("Model best params: ", clf.best_params_)
+
+    scores = clf.cv_results_['mean_test_score']
+    write_csv("DecisionTree_classifier", scores, tree_depth)
 
     return clf
 
@@ -121,10 +126,10 @@ def build_NearrestNeighbours_classifier(X_training, y_training):
 	clf : the classifier built in this function
     '''
     ##         "INSERT YOUR CODE HERE"    
-    max_N_value = 350
-    min_N_value = 1
-    n_range = list(range(min_N_value,max_N_value))
-    param_grid = dict(n_neighbors=n_range)
+    max_K_value = 100
+    min_K_value = 1
+    k_range = list(range(min_K_value, max_K_value+1))
+    param_grid = dict(n_neighbors=k_range)
     # Fit the model and build it
     knn = KNeighborsClassifier()
     clf = GridSearchCV(knn, param_grid)
@@ -134,6 +139,9 @@ def build_NearrestNeighbours_classifier(X_training, y_training):
     print("\n\nbuild_NearrestNeighbours_classifier model: ")
     print ("Model best score: ",clf.best_score_)
     print ("Model best params: ", clf.best_params_)
+
+    scores = clf.cv_results_['mean_test_score']
+    write_csv("NearrestNeighbours_classifier", scores, k_range)
 
     return clf
 
@@ -152,14 +160,17 @@ def build_SupportVectorMachine_classifier(X_training, y_training):
     '''
     ##         "INSERT YOUR CODE HERE"    
     svmc = SVC()
-
-    param_grid = dict(kernel=['rbf'], C=range(1, 10, 1))
+    parameter_C = list(range(1, 10+1))
+    param_grid = dict(kernel=['rbf'], C=parameter_C)
     clf = GridSearchCV(svmc, param_grid)
     clf.fit(X_training, y_training)
 
     print("\n\nbuild_SupportVectorMachine_classifier model: ")
     print ("Model best score: ",clf.best_score_)
     print ("Model best params: ", clf.best_params_)
+
+    scores = clf.cv_results_['mean_test_score']
+    write_csv("SupportVectorMachine_classifier", scores, parameter_C)
 
     return clf
 
@@ -192,7 +203,7 @@ def build_NeuralNetwork_classifier(X_training, y_training):
     optimizer = tf.keras.optimizers.Adam(lr=0.001)
     clf.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
 
-    clf.fit(X_training, y_training, epochs=50, batch_size=128)
+    clf.fit(X_training, y_training, shuffle=True, epochs=100, batch_size=20)
 
     return clf
 
@@ -262,6 +273,15 @@ def show_prediction(model, data, X_test):
                 print(msg)
     
 
+def write_csv(fname, xs, ys):
+    with open(fname+'.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["x-axis", "y-axis"])
+
+        for i in range(0, len(xs)):
+            writer.writerow([xs[i], ys[i]])
+
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 if __name__ == "__main__":
@@ -270,7 +290,7 @@ if __name__ == "__main__":
     # functions to perform the required tasks and repeat your experiments.
     # Call your functions here
 
-    ##         "INSERT YOUR CODE HERE"    
+    ##         "INSERT YOUR CODE HERE"
     data_path = os.path.dirname(os.path.realpath(__file__)) + '/medical_records.data'
     x, y, data = prepare_dataset(data_path)
     # split the data randomly to 80% training set and 20% testting sets 

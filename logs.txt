@@ -1,0 +1,695 @@
+
+
+build_DecisionTree_classifier model: 
+Model best score:  0.9340659340659341
+Model best params:  {'max_depth': 4}
+Testing Accuracy: 0.9473684210526315
+Train Accuracy: 0.9956043956043956
+
+
+id:84300903 - expeceted_tumour:M || predicted_tumour:M
+id:844359 - expeceted_tumour:M || predicted_tumour:M
+id:84501001 - expeceted_tumour:M || predicted_tumour:M
+id:845636 - expeceted_tumour:M || predicted_tumour:M
+id:84610002 - expeceted_tumour:M || predicted_tumour:M
+id:853201 - expeceted_tumour:M || predicted_tumour:M
+id:853401 - expeceted_tumour:M || predicted_tumour:M
+id:855138 - expeceted_tumour:M || predicted_tumour:M
+id:85759902 - expeceted_tumour:B || predicted_tumour:B
+id:859575 - expeceted_tumour:M || predicted_tumour:M
+id:859717 - expeceted_tumour:M || predicted_tumour:M
+id:859983 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:8610404 - expeceted_tumour:M || predicted_tumour:M
+id:8610629 - expeceted_tumour:B || predicted_tumour:B
+id:8610637 - expeceted_tumour:M || predicted_tumour:M
+id:8610862 - expeceted_tumour:M || predicted_tumour:M
+id:8610908 - expeceted_tumour:B || predicted_tumour:B
+id:8611161 - expeceted_tumour:B || predicted_tumour:M (**WRONG**)
+id:8611555 - expeceted_tumour:M || predicted_tumour:M
+id:8611792 - expeceted_tumour:M || predicted_tumour:M
+id:8612080 - expeceted_tumour:B || predicted_tumour:B
+id:86135501 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:861648 - expeceted_tumour:B || predicted_tumour:B
+id:862722 - expeceted_tumour:B || predicted_tumour:B
+id:862989 - expeceted_tumour:B || predicted_tumour:B
+id:864018 - expeceted_tumour:B || predicted_tumour:B
+id:864033 - expeceted_tumour:B || predicted_tumour:B
+id:864877 - expeceted_tumour:M || predicted_tumour:M
+id:8670 - expeceted_tumour:M || predicted_tumour:M
+id:86730502 - expeceted_tumour:M || predicted_tumour:M
+id:868999 - expeceted_tumour:B || predicted_tumour:B
+id:869254 - expeceted_tumour:B || predicted_tumour:B
+id:869476 - expeceted_tumour:B || predicted_tumour:B
+id:86973702 - expeceted_tumour:B || predicted_tumour:M (**WRONG**)
+id:87106 - expeceted_tumour:B || predicted_tumour:B
+id:871122 - expeceted_tumour:B || predicted_tumour:B
+id:8712064 - expeceted_tumour:B || predicted_tumour:B
+id:8712291 - expeceted_tumour:B || predicted_tumour:B
+id:8712729 - expeceted_tumour:M || predicted_tumour:M
+id:87281702 - expeceted_tumour:M || predicted_tumour:M
+id:873701 - expeceted_tumour:M || predicted_tumour:M
+id:874662 - expeceted_tumour:B || predicted_tumour:B
+id:875938 - expeceted_tumour:M || predicted_tumour:M
+id:87880 - expeceted_tumour:M || predicted_tumour:M
+id:87930 - expeceted_tumour:B || predicted_tumour:B
+id:8810158 - expeceted_tumour:B || predicted_tumour:B
+id:8810528 - expeceted_tumour:B || predicted_tumour:B
+id:8812844 - expeceted_tumour:B || predicted_tumour:B
+id:88147202 - expeceted_tumour:B || predicted_tumour:B
+id:88249602 - expeceted_tumour:B || predicted_tumour:B
+id:883270 - expeceted_tumour:B || predicted_tumour:B
+id:884689 - expeceted_tumour:B || predicted_tumour:B
+id:884948 - expeceted_tumour:M || predicted_tumour:M
+id:886452 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:886776 - expeceted_tumour:M || predicted_tumour:M
+id:889719 - expeceted_tumour:M || predicted_tumour:M
+id:88995002 - expeceted_tumour:M || predicted_tumour:M
+id:8910748 - expeceted_tumour:B || predicted_tumour:B
+id:8911163 - expeceted_tumour:M || predicted_tumour:M
+id:8911164 - expeceted_tumour:B || predicted_tumour:B
+id:8912055 - expeceted_tumour:B || predicted_tumour:B
+id:8912284 - expeceted_tumour:B || predicted_tumour:B
+id:893061 - expeceted_tumour:B || predicted_tumour:B
+id:894604 - expeceted_tumour:B || predicted_tumour:B
+id:894855 - expeceted_tumour:B || predicted_tumour:B
+id:895633 - expeceted_tumour:M || predicted_tumour:M
+id:896864 - expeceted_tumour:B || predicted_tumour:B
+id:897132 - expeceted_tumour:B || predicted_tumour:B
+id:897137 - expeceted_tumour:B || predicted_tumour:B
+id:897374 - expeceted_tumour:B || predicted_tumour:B
+id:9010018 - expeceted_tumour:M || predicted_tumour:M
+id:9010598 - expeceted_tumour:B || predicted_tumour:B
+id:9012000 - expeceted_tumour:M || predicted_tumour:M
+id:901549 - expeceted_tumour:B || predicted_tumour:B
+id:90250 - expeceted_tumour:B || predicted_tumour:B
+id:902727 - expeceted_tumour:B || predicted_tumour:B
+id:903516 - expeceted_tumour:M || predicted_tumour:M
+id:903554 - expeceted_tumour:B || predicted_tumour:B
+id:903811 - expeceted_tumour:B || predicted_tumour:B
+id:90524101 - expeceted_tumour:M || predicted_tumour:M
+id:906616 - expeceted_tumour:B || predicted_tumour:B
+id:907145 - expeceted_tumour:B || predicted_tumour:B
+id:907367 - expeceted_tumour:B || predicted_tumour:B
+id:907915 - expeceted_tumour:B || predicted_tumour:B
+id:909445 - expeceted_tumour:M || predicted_tumour:M
+id:9112367 - expeceted_tumour:B || predicted_tumour:B
+id:9113156 - expeceted_tumour:B || predicted_tumour:B
+id:911320502 - expeceted_tumour:B || predicted_tumour:B
+id:9113538 - expeceted_tumour:M || predicted_tumour:M
+id:911673 - expeceted_tumour:B || predicted_tumour:B
+id:912519 - expeceted_tumour:B || predicted_tumour:B
+id:913102 - expeceted_tumour:B || predicted_tumour:B
+id:914862 - expeceted_tumour:B || predicted_tumour:B
+id:915143 - expeceted_tumour:M || predicted_tumour:M
+id:915664 - expeceted_tumour:B || predicted_tumour:B
+id:917092 - expeceted_tumour:B || predicted_tumour:M (**WRONG**)
+id:91813701 - expeceted_tumour:B || predicted_tumour:B
+id:91813702 - expeceted_tumour:B || predicted_tumour:B
+id:918192 - expeceted_tumour:B || predicted_tumour:B
+id:91858 - expeceted_tumour:B || predicted_tumour:B
+id:91903901 - expeceted_tumour:B || predicted_tumour:B
+id:91903902 - expeceted_tumour:B || predicted_tumour:B
+id:919555 - expeceted_tumour:M || predicted_tumour:M
+id:921092 - expeceted_tumour:B || predicted_tumour:B
+id:921385 - expeceted_tumour:B || predicted_tumour:B
+id:923465 - expeceted_tumour:B || predicted_tumour:B
+id:923780 - expeceted_tumour:B || predicted_tumour:B
+id:924934 - expeceted_tumour:B || predicted_tumour:B
+id:924964 - expeceted_tumour:B || predicted_tumour:B
+id:925236 - expeceted_tumour:B || predicted_tumour:B
+id:925311 - expeceted_tumour:B || predicted_tumour:B
+id:926424 - expeceted_tumour:M || predicted_tumour:M
+id:926682 - expeceted_tumour:M || predicted_tumour:M
+id:927241 - expeceted_tumour:M || predicted_tumour:M
+
+
+build_NearrestNeighbours_classifier model: 
+Model best score:  0.9274725274725274
+Model best params:  {'n_neighbors': 9}
+Testing Accuracy: 0.956140350877193
+Train Accuracy: 0.9318681318681319
+
+
+id:84300903 - expeceted_tumour:M || predicted_tumour:M
+id:844359 - expeceted_tumour:M || predicted_tumour:M
+id:84501001 - expeceted_tumour:M || predicted_tumour:M
+id:845636 - expeceted_tumour:M || predicted_tumour:M
+id:84610002 - expeceted_tumour:M || predicted_tumour:M
+id:853201 - expeceted_tumour:M || predicted_tumour:M
+id:853401 - expeceted_tumour:M || predicted_tumour:M
+id:855138 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:85759902 - expeceted_tumour:B || predicted_tumour:B
+id:859575 - expeceted_tumour:M || predicted_tumour:M
+id:859717 - expeceted_tumour:M || predicted_tumour:M
+id:859983 - expeceted_tumour:M || predicted_tumour:M
+id:8610404 - expeceted_tumour:M || predicted_tumour:M
+id:8610629 - expeceted_tumour:B || predicted_tumour:B
+id:8610637 - expeceted_tumour:M || predicted_tumour:M
+id:8610862 - expeceted_tumour:M || predicted_tumour:M
+id:8610908 - expeceted_tumour:B || predicted_tumour:B
+id:8611161 - expeceted_tumour:B || predicted_tumour:B
+id:8611555 - expeceted_tumour:M || predicted_tumour:M
+id:8611792 - expeceted_tumour:M || predicted_tumour:M
+id:8612080 - expeceted_tumour:B || predicted_tumour:B
+id:86135501 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:861648 - expeceted_tumour:B || predicted_tumour:B
+id:862722 - expeceted_tumour:B || predicted_tumour:B
+id:862989 - expeceted_tumour:B || predicted_tumour:B
+id:864018 - expeceted_tumour:B || predicted_tumour:B
+id:864033 - expeceted_tumour:B || predicted_tumour:B
+id:864877 - expeceted_tumour:M || predicted_tumour:M
+id:8670 - expeceted_tumour:M || predicted_tumour:M
+id:86730502 - expeceted_tumour:M || predicted_tumour:M
+id:868999 - expeceted_tumour:B || predicted_tumour:B
+id:869254 - expeceted_tumour:B || predicted_tumour:B
+id:869476 - expeceted_tumour:B || predicted_tumour:B
+id:86973702 - expeceted_tumour:B || predicted_tumour:B
+id:87106 - expeceted_tumour:B || predicted_tumour:B
+id:871122 - expeceted_tumour:B || predicted_tumour:B
+id:8712064 - expeceted_tumour:B || predicted_tumour:B
+id:8712291 - expeceted_tumour:B || predicted_tumour:B
+id:8712729 - expeceted_tumour:M || predicted_tumour:M
+id:87281702 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:873701 - expeceted_tumour:M || predicted_tumour:M
+id:874662 - expeceted_tumour:B || predicted_tumour:B
+id:875938 - expeceted_tumour:M || predicted_tumour:M
+id:87880 - expeceted_tumour:M || predicted_tumour:M
+id:87930 - expeceted_tumour:B || predicted_tumour:B
+id:8810158 - expeceted_tumour:B || predicted_tumour:B
+id:8810528 - expeceted_tumour:B || predicted_tumour:B
+id:8812844 - expeceted_tumour:B || predicted_tumour:B
+id:88147202 - expeceted_tumour:B || predicted_tumour:B
+id:88249602 - expeceted_tumour:B || predicted_tumour:B
+id:883270 - expeceted_tumour:B || predicted_tumour:B
+id:884689 - expeceted_tumour:B || predicted_tumour:B
+id:884948 - expeceted_tumour:M || predicted_tumour:M
+id:886452 - expeceted_tumour:M || predicted_tumour:M
+id:886776 - expeceted_tumour:M || predicted_tumour:M
+id:889719 - expeceted_tumour:M || predicted_tumour:M
+id:88995002 - expeceted_tumour:M || predicted_tumour:M
+id:8910748 - expeceted_tumour:B || predicted_tumour:B
+id:8911163 - expeceted_tumour:M || predicted_tumour:M
+id:8911164 - expeceted_tumour:B || predicted_tumour:B
+id:8912055 - expeceted_tumour:B || predicted_tumour:B
+id:8912284 - expeceted_tumour:B || predicted_tumour:B
+id:893061 - expeceted_tumour:B || predicted_tumour:B
+id:894604 - expeceted_tumour:B || predicted_tumour:B
+id:894855 - expeceted_tumour:B || predicted_tumour:B
+id:895633 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:896864 - expeceted_tumour:B || predicted_tumour:B
+id:897132 - expeceted_tumour:B || predicted_tumour:B
+id:897137 - expeceted_tumour:B || predicted_tumour:B
+id:897374 - expeceted_tumour:B || predicted_tumour:B
+id:9010018 - expeceted_tumour:M || predicted_tumour:M
+id:9010598 - expeceted_tumour:B || predicted_tumour:B
+id:9012000 - expeceted_tumour:M || predicted_tumour:M
+id:901549 - expeceted_tumour:B || predicted_tumour:B
+id:90250 - expeceted_tumour:B || predicted_tumour:B
+id:902727 - expeceted_tumour:B || predicted_tumour:B
+id:903516 - expeceted_tumour:M || predicted_tumour:M
+id:903554 - expeceted_tumour:B || predicted_tumour:B
+id:903811 - expeceted_tumour:B || predicted_tumour:B
+id:90524101 - expeceted_tumour:M || predicted_tumour:M
+id:906616 - expeceted_tumour:B || predicted_tumour:B
+id:907145 - expeceted_tumour:B || predicted_tumour:B
+id:907367 - expeceted_tumour:B || predicted_tumour:B
+id:907915 - expeceted_tumour:B || predicted_tumour:B
+id:909445 - expeceted_tumour:M || predicted_tumour:M
+id:9112367 - expeceted_tumour:B || predicted_tumour:B
+id:9113156 - expeceted_tumour:B || predicted_tumour:B
+id:911320502 - expeceted_tumour:B || predicted_tumour:B
+id:9113538 - expeceted_tumour:M || predicted_tumour:M
+id:911673 - expeceted_tumour:B || predicted_tumour:B
+id:912519 - expeceted_tumour:B || predicted_tumour:B
+id:913102 - expeceted_tumour:B || predicted_tumour:B
+id:914862 - expeceted_tumour:B || predicted_tumour:B
+id:915143 - expeceted_tumour:M || predicted_tumour:M
+id:915664 - expeceted_tumour:B || predicted_tumour:B
+id:917092 - expeceted_tumour:B || predicted_tumour:B
+id:91813701 - expeceted_tumour:B || predicted_tumour:B
+id:91813702 - expeceted_tumour:B || predicted_tumour:B
+id:918192 - expeceted_tumour:B || predicted_tumour:B
+id:91858 - expeceted_tumour:B || predicted_tumour:B
+id:91903901 - expeceted_tumour:B || predicted_tumour:B
+id:91903902 - expeceted_tumour:B || predicted_tumour:M (**WRONG**)
+id:919555 - expeceted_tumour:M || predicted_tumour:M
+id:921092 - expeceted_tumour:B || predicted_tumour:B
+id:921385 - expeceted_tumour:B || predicted_tumour:B
+id:923465 - expeceted_tumour:B || predicted_tumour:B
+id:923780 - expeceted_tumour:B || predicted_tumour:B
+id:924934 - expeceted_tumour:B || predicted_tumour:B
+id:924964 - expeceted_tumour:B || predicted_tumour:B
+id:925236 - expeceted_tumour:B || predicted_tumour:B
+id:925311 - expeceted_tumour:B || predicted_tumour:B
+id:926424 - expeceted_tumour:M || predicted_tumour:M
+id:926682 - expeceted_tumour:M || predicted_tumour:M
+id:927241 - expeceted_tumour:M || predicted_tumour:M
+
+
+build_SupportVectorMachine_classifier model: 
+Model best score:  0.9186813186813187
+Model best params:  {'C': 3, 'kernel': 'rbf'}
+Testing Accuracy: 0.9473684210526315
+Train Accuracy: 0.9186813186813186
+
+
+id:84300903 - expeceted_tumour:M || predicted_tumour:M
+id:844359 - expeceted_tumour:M || predicted_tumour:M
+id:84501001 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:845636 - expeceted_tumour:M || predicted_tumour:M
+id:84610002 - expeceted_tumour:M || predicted_tumour:M
+id:853201 - expeceted_tumour:M || predicted_tumour:M
+id:853401 - expeceted_tumour:M || predicted_tumour:M
+id:855138 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:85759902 - expeceted_tumour:B || predicted_tumour:B
+id:859575 - expeceted_tumour:M || predicted_tumour:M
+id:859717 - expeceted_tumour:M || predicted_tumour:M
+id:859983 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:8610404 - expeceted_tumour:M || predicted_tumour:M
+id:8610629 - expeceted_tumour:B || predicted_tumour:B
+id:8610637 - expeceted_tumour:M || predicted_tumour:M
+id:8610862 - expeceted_tumour:M || predicted_tumour:M
+id:8610908 - expeceted_tumour:B || predicted_tumour:B
+id:8611161 - expeceted_tumour:B || predicted_tumour:B
+id:8611555 - expeceted_tumour:M || predicted_tumour:M
+id:8611792 - expeceted_tumour:M || predicted_tumour:M
+id:8612080 - expeceted_tumour:B || predicted_tumour:B
+id:86135501 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:861648 - expeceted_tumour:B || predicted_tumour:B
+id:862722 - expeceted_tumour:B || predicted_tumour:B
+id:862989 - expeceted_tumour:B || predicted_tumour:B
+id:864018 - expeceted_tumour:B || predicted_tumour:B
+id:864033 - expeceted_tumour:B || predicted_tumour:B
+id:864877 - expeceted_tumour:M || predicted_tumour:M
+id:8670 - expeceted_tumour:M || predicted_tumour:M
+id:86730502 - expeceted_tumour:M || predicted_tumour:M
+id:868999 - expeceted_tumour:B || predicted_tumour:B
+id:869254 - expeceted_tumour:B || predicted_tumour:B
+id:869476 - expeceted_tumour:B || predicted_tumour:B
+id:86973702 - expeceted_tumour:B || predicted_tumour:B
+id:87106 - expeceted_tumour:B || predicted_tumour:B
+id:871122 - expeceted_tumour:B || predicted_tumour:B
+id:8712064 - expeceted_tumour:B || predicted_tumour:B
+id:8712291 - expeceted_tumour:B || predicted_tumour:B
+id:8712729 - expeceted_tumour:M || predicted_tumour:M
+id:87281702 - expeceted_tumour:M || predicted_tumour:M
+id:873701 - expeceted_tumour:M || predicted_tumour:M
+id:874662 - expeceted_tumour:B || predicted_tumour:B
+id:875938 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:87880 - expeceted_tumour:M || predicted_tumour:M
+id:87930 - expeceted_tumour:B || predicted_tumour:B
+id:8810158 - expeceted_tumour:B || predicted_tumour:B
+id:8810528 - expeceted_tumour:B || predicted_tumour:B
+id:8812844 - expeceted_tumour:B || predicted_tumour:B
+id:88147202 - expeceted_tumour:B || predicted_tumour:B
+id:88249602 - expeceted_tumour:B || predicted_tumour:B
+id:883270 - expeceted_tumour:B || predicted_tumour:B
+id:884689 - expeceted_tumour:B || predicted_tumour:B
+id:884948 - expeceted_tumour:M || predicted_tumour:M
+id:886452 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:886776 - expeceted_tumour:M || predicted_tumour:M
+id:889719 - expeceted_tumour:M || predicted_tumour:M
+id:88995002 - expeceted_tumour:M || predicted_tumour:M
+id:8910748 - expeceted_tumour:B || predicted_tumour:B
+id:8911163 - expeceted_tumour:M || predicted_tumour:M
+id:8911164 - expeceted_tumour:B || predicted_tumour:B
+id:8912055 - expeceted_tumour:B || predicted_tumour:B
+id:8912284 - expeceted_tumour:B || predicted_tumour:B
+id:893061 - expeceted_tumour:B || predicted_tumour:B
+id:894604 - expeceted_tumour:B || predicted_tumour:B
+id:894855 - expeceted_tumour:B || predicted_tumour:B
+id:895633 - expeceted_tumour:M || predicted_tumour:M
+id:896864 - expeceted_tumour:B || predicted_tumour:B
+id:897132 - expeceted_tumour:B || predicted_tumour:B
+id:897137 - expeceted_tumour:B || predicted_tumour:B
+id:897374 - expeceted_tumour:B || predicted_tumour:B
+id:9010018 - expeceted_tumour:M || predicted_tumour:M
+id:9010598 - expeceted_tumour:B || predicted_tumour:B
+id:9012000 - expeceted_tumour:M || predicted_tumour:M
+id:901549 - expeceted_tumour:B || predicted_tumour:B
+id:90250 - expeceted_tumour:B || predicted_tumour:B
+id:902727 - expeceted_tumour:B || predicted_tumour:B
+id:903516 - expeceted_tumour:M || predicted_tumour:M
+id:903554 - expeceted_tumour:B || predicted_tumour:B
+id:903811 - expeceted_tumour:B || predicted_tumour:B
+id:90524101 - expeceted_tumour:M || predicted_tumour:M
+id:906616 - expeceted_tumour:B || predicted_tumour:B
+id:907145 - expeceted_tumour:B || predicted_tumour:B
+id:907367 - expeceted_tumour:B || predicted_tumour:B
+id:907915 - expeceted_tumour:B || predicted_tumour:B
+id:909445 - expeceted_tumour:M || predicted_tumour:M
+id:9112367 - expeceted_tumour:B || predicted_tumour:B
+id:9113156 - expeceted_tumour:B || predicted_tumour:B
+id:911320502 - expeceted_tumour:B || predicted_tumour:B
+id:9113538 - expeceted_tumour:M || predicted_tumour:M
+id:911673 - expeceted_tumour:B || predicted_tumour:B
+id:912519 - expeceted_tumour:B || predicted_tumour:B
+id:913102 - expeceted_tumour:B || predicted_tumour:B
+id:914862 - expeceted_tumour:B || predicted_tumour:B
+id:915143 - expeceted_tumour:M || predicted_tumour:M
+id:915664 - expeceted_tumour:B || predicted_tumour:B
+id:917092 - expeceted_tumour:B || predicted_tumour:B
+id:91813701 - expeceted_tumour:B || predicted_tumour:B
+id:91813702 - expeceted_tumour:B || predicted_tumour:B
+id:918192 - expeceted_tumour:B || predicted_tumour:B
+id:91858 - expeceted_tumour:B || predicted_tumour:B
+id:91903901 - expeceted_tumour:B || predicted_tumour:B
+id:91903902 - expeceted_tumour:B || predicted_tumour:B
+id:919555 - expeceted_tumour:M || predicted_tumour:M
+id:921092 - expeceted_tumour:B || predicted_tumour:B
+id:921385 - expeceted_tumour:B || predicted_tumour:B
+id:923465 - expeceted_tumour:B || predicted_tumour:B
+id:923780 - expeceted_tumour:B || predicted_tumour:B
+id:924934 - expeceted_tumour:B || predicted_tumour:B
+id:924964 - expeceted_tumour:B || predicted_tumour:B
+id:925236 - expeceted_tumour:B || predicted_tumour:B
+id:925311 - expeceted_tumour:B || predicted_tumour:B
+id:926424 - expeceted_tumour:M || predicted_tumour:M
+id:926682 - expeceted_tumour:M || predicted_tumour:M
+id:927241 - expeceted_tumour:M || predicted_tumour:M
+
+
+
+
+Epoch 1/100
+23/23 [==============================] - 0s 1ms/step - loss: 6.7365 - accuracy: 0.6440
+Epoch 2/100
+23/23 [==============================] - 0s 1ms/step - loss: 1.4013 - accuracy: 0.8352
+Epoch 3/100
+23/23 [==============================] - 0s 1ms/step - loss: 1.2316 - accuracy: 0.8462
+Epoch 4/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.5781 - accuracy: 0.8989
+Epoch 5/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.7953 - accuracy: 0.8637
+Epoch 6/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.6029 - accuracy: 0.8769
+Epoch 7/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.8609 - accuracy: 0.8198
+Epoch 8/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.5434 - accuracy: 0.9033
+Epoch 9/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.5459 - accuracy: 0.8835
+Epoch 10/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.4419 - accuracy: 0.9011
+Epoch 11/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.4280 - accuracy: 0.8923
+Epoch 12/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.5416 - accuracy: 0.8637
+Epoch 13/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.6406 - accuracy: 0.8571
+Epoch 14/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.3057 - accuracy: 0.9077
+Epoch 15/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2907 - accuracy: 0.8989
+Epoch 16/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2879 - accuracy: 0.9055
+Epoch 17/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2693 - accuracy: 0.9099
+Epoch 18/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.5746 - accuracy: 0.8418
+Epoch 19/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.8551 - accuracy: 0.8308
+Epoch 20/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.5930 - accuracy: 0.8857
+Epoch 21/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.4175 - accuracy: 0.8989
+Epoch 22/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.3067 - accuracy: 0.9253
+Epoch 23/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.5037 - accuracy: 0.8747
+Epoch 24/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.4674 - accuracy: 0.8791
+Epoch 25/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.3529 - accuracy: 0.8989
+Epoch 26/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.3009 - accuracy: 0.8989
+Epoch 27/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.4096 - accuracy: 0.8923
+Epoch 28/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.4058 - accuracy: 0.9011
+Epoch 29/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.3731 - accuracy: 0.9143
+Epoch 30/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.3251 - accuracy: 0.8967
+Epoch 31/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2400 - accuracy: 0.9319
+Epoch 32/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.4435 - accuracy: 0.8703
+Epoch 33/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.4815 - accuracy: 0.8967
+Epoch 34/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.3000 - accuracy: 0.9077
+Epoch 35/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.3613 - accuracy: 0.8901
+Epoch 36/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2767 - accuracy: 0.9055
+Epoch 37/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2457 - accuracy: 0.9187
+Epoch 38/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.3806 - accuracy: 0.9011
+Epoch 39/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.6862 - accuracy: 0.8615
+Epoch 40/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.4035 - accuracy: 0.9099
+Epoch 41/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2472 - accuracy: 0.9319
+Epoch 42/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2638 - accuracy: 0.9209
+Epoch 43/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.1844 - accuracy: 0.9341
+Epoch 44/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.1981 - accuracy: 0.9253
+Epoch 45/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.1789 - accuracy: 0.9363
+Epoch 46/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.1755 - accuracy: 0.9319
+Epoch 47/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.3252 - accuracy: 0.9011
+Epoch 48/100
+23/23 [==============================] - 0s 2ms/step - loss: 1.2152 - accuracy: 0.7978
+Epoch 49/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.8285 - accuracy: 0.8725
+Epoch 50/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.8838 - accuracy: 0.8659
+Epoch 51/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.4063 - accuracy: 0.9121
+Epoch 52/100
+23/23 [==============================] - 0s 3ms/step - loss: 0.2988 - accuracy: 0.9077
+Epoch 53/100
+23/23 [==============================] - 0s 3ms/step - loss: 0.2522 - accuracy: 0.9275
+Epoch 54/100
+23/23 [==============================] - 0s 3ms/step - loss: 0.2855 - accuracy: 0.9165
+Epoch 55/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.4420 - accuracy: 0.8835
+Epoch 56/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.4583 - accuracy: 0.8923
+Epoch 57/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.4103 - accuracy: 0.8967
+Epoch 58/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.4134 - accuracy: 0.8989
+Epoch 59/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.4021 - accuracy: 0.9143
+Epoch 60/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.2566 - accuracy: 0.9275
+Epoch 61/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.3110 - accuracy: 0.9231
+Epoch 62/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.3176 - accuracy: 0.9209
+Epoch 63/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2274 - accuracy: 0.9253
+Epoch 64/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2767 - accuracy: 0.9143
+Epoch 65/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2078 - accuracy: 0.9275
+Epoch 66/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2461 - accuracy: 0.9209
+Epoch 67/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.4765 - accuracy: 0.8725
+Epoch 68/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.5878 - accuracy: 0.8769
+Epoch 69/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.3584 - accuracy: 0.9143
+Epoch 70/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.5363 - accuracy: 0.8879
+Epoch 71/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.5609 - accuracy: 0.8967
+Epoch 72/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.3798 - accuracy: 0.9209
+Epoch 73/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.7970 - accuracy: 0.8396
+Epoch 74/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.5434 - accuracy: 0.8989
+Epoch 75/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.6113 - accuracy: 0.8989
+Epoch 76/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2483 - accuracy: 0.9275
+Epoch 77/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2120 - accuracy: 0.9363
+Epoch 78/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.2613 - accuracy: 0.9165
+Epoch 79/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2209 - accuracy: 0.9253
+Epoch 80/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2107 - accuracy: 0.9275
+Epoch 81/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.1986 - accuracy: 0.9407
+Epoch 82/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.1828 - accuracy: 0.9451
+Epoch 83/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.2504 - accuracy: 0.9319
+Epoch 84/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.3913 - accuracy: 0.8945
+Epoch 85/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.2013 - accuracy: 0.9451
+Epoch 86/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.1515 - accuracy: 0.9429
+Epoch 87/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.1291 - accuracy: 0.9451
+Epoch 88/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.2617 - accuracy: 0.9077
+Epoch 89/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.7032 - accuracy: 0.8418
+Epoch 90/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.4245 - accuracy: 0.9209
+Epoch 91/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.1986 - accuracy: 0.9451
+Epoch 92/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.1432 - accuracy: 0.9473
+Epoch 93/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.1779 - accuracy: 0.9429
+Epoch 94/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.1236 - accuracy: 0.9538
+Epoch 95/100
+23/23 [==============================] - 0s 1ms/step - loss: 0.1537 - accuracy: 0.9363
+Epoch 96/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.1334 - accuracy: 0.9516
+Epoch 97/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.1206 - accuracy: 0.9560
+Epoch 98/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.1348 - accuracy: 0.9495
+Epoch 99/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.1625 - accuracy: 0.9407
+Epoch 100/100
+23/23 [==============================] - 0s 2ms/step - loss: 0.1272 - accuracy: 0.9473
+4/4 [==============================] - 0s 1ms/step - loss: 0.0739 - accuracy: 0.9737
+
+
+build_NeuralNetwork_classifier model: 
+Testing Accuracy: 0.9736841917037964
+Testing loss: 0.07390010356903076
+
+
+id:84300903 - expeceted_tumour:M || predicted_tumour:M
+id:844359 - expeceted_tumour:M || predicted_tumour:M
+id:84501001 - expeceted_tumour:M || predicted_tumour:M
+id:845636 - expeceted_tumour:M || predicted_tumour:M
+id:84610002 - expeceted_tumour:M || predicted_tumour:M
+id:853201 - expeceted_tumour:M || predicted_tumour:M
+id:853401 - expeceted_tumour:M || predicted_tumour:M
+id:855138 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:85759902 - expeceted_tumour:B || predicted_tumour:B
+id:859575 - expeceted_tumour:M || predicted_tumour:M
+id:859717 - expeceted_tumour:M || predicted_tumour:M
+id:859983 - expeceted_tumour:M || predicted_tumour:M
+id:8610404 - expeceted_tumour:M || predicted_tumour:M
+id:8610629 - expeceted_tumour:B || predicted_tumour:B
+id:8610637 - expeceted_tumour:M || predicted_tumour:M
+id:8610862 - expeceted_tumour:M || predicted_tumour:M
+id:8610908 - expeceted_tumour:B || predicted_tumour:B
+id:8611161 - expeceted_tumour:B || predicted_tumour:B
+id:8611555 - expeceted_tumour:M || predicted_tumour:M
+id:8611792 - expeceted_tumour:M || predicted_tumour:M
+id:8612080 - expeceted_tumour:B || predicted_tumour:B
+id:86135501 - expeceted_tumour:M || predicted_tumour:B (**WRONG**)
+id:861648 - expeceted_tumour:B || predicted_tumour:B
+id:862722 - expeceted_tumour:B || predicted_tumour:B
+id:862989 - expeceted_tumour:B || predicted_tumour:B
+id:864018 - expeceted_tumour:B || predicted_tumour:B
+id:864033 - expeceted_tumour:B || predicted_tumour:B
+id:864877 - expeceted_tumour:M || predicted_tumour:M
+id:8670 - expeceted_tumour:M || predicted_tumour:M
+id:86730502 - expeceted_tumour:M || predicted_tumour:M
+id:868999 - expeceted_tumour:B || predicted_tumour:B
+id:869254 - expeceted_tumour:B || predicted_tumour:B
+id:869476 - expeceted_tumour:B || predicted_tumour:B
+id:86973702 - expeceted_tumour:B || predicted_tumour:B
+id:87106 - expeceted_tumour:B || predicted_tumour:B
+id:871122 - expeceted_tumour:B || predicted_tumour:B
+id:8712064 - expeceted_tumour:B || predicted_tumour:B
+id:8712291 - expeceted_tumour:B || predicted_tumour:B
+id:8712729 - expeceted_tumour:M || predicted_tumour:M
+id:87281702 - expeceted_tumour:M || predicted_tumour:M
+id:873701 - expeceted_tumour:M || predicted_tumour:M
+id:874662 - expeceted_tumour:B || predicted_tumour:B
+id:875938 - expeceted_tumour:M || predicted_tumour:M
+id:87880 - expeceted_tumour:M || predicted_tumour:M
+id:87930 - expeceted_tumour:B || predicted_tumour:B
+id:8810158 - expeceted_tumour:B || predicted_tumour:B
+id:8810528 - expeceted_tumour:B || predicted_tumour:B
+id:8812844 - expeceted_tumour:B || predicted_tumour:B
+id:88147202 - expeceted_tumour:B || predicted_tumour:B
+id:88249602 - expeceted_tumour:B || predicted_tumour:B
+id:883270 - expeceted_tumour:B || predicted_tumour:M (**WRONG**)
+id:884689 - expeceted_tumour:B || predicted_tumour:B
+id:884948 - expeceted_tumour:M || predicted_tumour:M
+id:886452 - expeceted_tumour:M || predicted_tumour:M
+id:886776 - expeceted_tumour:M || predicted_tumour:M
+id:889719 - expeceted_tumour:M || predicted_tumour:M
+id:88995002 - expeceted_tumour:M || predicted_tumour:M
+id:8910748 - expeceted_tumour:B || predicted_tumour:B
+id:8911163 - expeceted_tumour:M || predicted_tumour:M
+id:8911164 - expeceted_tumour:B || predicted_tumour:B
+id:8912055 - expeceted_tumour:B || predicted_tumour:B
+id:8912284 - expeceted_tumour:B || predicted_tumour:B
+id:893061 - expeceted_tumour:B || predicted_tumour:B
+id:894604 - expeceted_tumour:B || predicted_tumour:B
+id:894855 - expeceted_tumour:B || predicted_tumour:B
+id:895633 - expeceted_tumour:M || predicted_tumour:M
+id:896864 - expeceted_tumour:B || predicted_tumour:B
+id:897132 - expeceted_tumour:B || predicted_tumour:B
+id:897137 - expeceted_tumour:B || predicted_tumour:B
+id:897374 - expeceted_tumour:B || predicted_tumour:B
+id:9010018 - expeceted_tumour:M || predicted_tumour:M
+id:9010598 - expeceted_tumour:B || predicted_tumour:B
+id:9012000 - expeceted_tumour:M || predicted_tumour:M
+id:901549 - expeceted_tumour:B || predicted_tumour:B
+id:90250 - expeceted_tumour:B || predicted_tumour:B
+id:902727 - expeceted_tumour:B || predicted_tumour:B
+id:903516 - expeceted_tumour:M || predicted_tumour:M
+id:903554 - expeceted_tumour:B || predicted_tumour:B
+id:903811 - expeceted_tumour:B || predicted_tumour:B
+id:90524101 - expeceted_tumour:M || predicted_tumour:M
+id:906616 - expeceted_tumour:B || predicted_tumour:B
+id:907145 - expeceted_tumour:B || predicted_tumour:B
+id:907367 - expeceted_tumour:B || predicted_tumour:B
+id:907915 - expeceted_tumour:B || predicted_tumour:B
+id:909445 - expeceted_tumour:M || predicted_tumour:M
+id:9112367 - expeceted_tumour:B || predicted_tumour:B
+id:9113156 - expeceted_tumour:B || predicted_tumour:B
+id:911320502 - expeceted_tumour:B || predicted_tumour:B
+id:9113538 - expeceted_tumour:M || predicted_tumour:M
+id:911673 - expeceted_tumour:B || predicted_tumour:B
+id:912519 - expeceted_tumour:B || predicted_tumour:B
+id:913102 - expeceted_tumour:B || predicted_tumour:B
+id:914862 - expeceted_tumour:B || predicted_tumour:B
+id:915143 - expeceted_tumour:M || predicted_tumour:M
+id:915664 - expeceted_tumour:B || predicted_tumour:B
+id:917092 - expeceted_tumour:B || predicted_tumour:B
+id:91813701 - expeceted_tumour:B || predicted_tumour:B
+id:91813702 - expeceted_tumour:B || predicted_tumour:B
+id:918192 - expeceted_tumour:B || predicted_tumour:B
+id:91858 - expeceted_tumour:B || predicted_tumour:B
+id:91903901 - expeceted_tumour:B || predicted_tumour:B
+id:91903902 - expeceted_tumour:B || predicted_tumour:B
+id:919555 - expeceted_tumour:M || predicted_tumour:M
+id:921092 - expeceted_tumour:B || predicted_tumour:B
+id:921385 - expeceted_tumour:B || predicted_tumour:B
+id:923465 - expeceted_tumour:B || predicted_tumour:B
+id:923780 - expeceted_tumour:B || predicted_tumour:B
+id:924934 - expeceted_tumour:B || predicted_tumour:B
+id:924964 - expeceted_tumour:B || predicted_tumour:B
+id:925236 - expeceted_tumour:B || predicted_tumour:B
+id:925311 - expeceted_tumour:B || predicted_tumour:B
+id:926424 - expeceted_tumour:M || predicted_tumour:M
+id:926682 - expeceted_tumour:M || predicted_tumour:M
+id:927241 - expeceted_tumour:M || predicted_tumour:M

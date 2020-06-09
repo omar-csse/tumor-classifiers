@@ -133,7 +133,7 @@ def build_NearrestNeighbours_classifier(X_training, y_training):
     # Fit the model and build it
     knn = KNeighborsClassifier()
     clf = GridSearchCV(knn, param_grid)
-    clf.fit(X_train,Y_train)
+    clf.fit(X_training, y_training)
 
     # Show the best neighbours value
     print("\n\nbuild_NearrestNeighbours_classifier model: ")
